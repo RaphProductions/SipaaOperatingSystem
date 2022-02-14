@@ -14,4 +14,4 @@ Features :
 By default , SipaaOS comes with S.O.D.E. (SipaaOS Desktop Environment) , a beautiful Desktop!
 
 Image of Sode here :
-![alt text](github.com/RaphMar2021/SipaaOperatingSystem/master/screen.png)
+![alt text](https://github.com/RaphMar2021/SipaaOperatingSystem/blob/master/screen.png)
