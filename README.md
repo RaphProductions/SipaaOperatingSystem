@@ -1,5 +1,5 @@
 # SipaaOS
-An VB O.S. (yeah , really) with multiple features
+An VB O.S. (yeah , really) with Windows 11 like apparence and multiple features.
 
 Features : 
  * Multitasking
