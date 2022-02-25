@@ -17,3 +17,8 @@ By default , SipaaOS comes with S.O.D.E. (SipaaOS Desktop Environment) , a beaut
 
 Image of Sode here :
 ![alt text](https://github.com/RaphMar2021/SipaaOperatingSystem/blob/master/screen.png)
+
+For developers :
+
+SipaaOS uses .NET Framework 4.6
+and you need Visual Studio 2022 or highter for modify it...
