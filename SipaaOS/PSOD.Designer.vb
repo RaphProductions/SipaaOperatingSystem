@@ -23,64 +23,69 @@ Partial Class PSOD
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.SButton1 = New Sipaa.Framework.SButton()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 60.25!)
-        Me.Label1.Location = New System.Drawing.Point(84, 84)
+        Me.Label1.Location = New System.Drawing.Point(631, 48)
         Me.Label1.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 108)
+        Me.Label1.Size = New System.Drawing.Size(196, 135)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = ":("
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(96, 240)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 35)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Exception" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label1.Text = "😥"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(96, 291)
+        Me.Label3.Location = New System.Drawing.Point(432, 292)
         Me.Label3.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(758, 175)
+        Me.Label3.Size = New System.Drawing.Size(588, 84)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "If is the first time you view this screen, reboot SipaaOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Else ," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Try to report " &
-    "the bug to the SipaaOS Github or the .NET Framework" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Github or modify the SipaaO" &
-    "S Source Code" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label3.Text = "Try to rebuild the kernel configuration file" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(96, 192)
+        Me.Label4.Location = New System.Drawing.Point(295, 183)
         Me.Label4.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(984, 35)
+        Me.Label4.Size = New System.Drawing.Size(887, 42)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "SipaaOS ran into a problem and needs to restart , Sorry if you have forgot all yo" &
-    "ur work" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label4.Text = "The Sipaa Boot Loader can not find the kernel configuration file" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'SButton1
+        '
+        Me.SButton1.BackColor = System.Drawing.Color.White
+        Me.SButton1.BorderColor = System.Drawing.Color.PaleVioletRed
+        Me.SButton1.BorderRadius = 6
+        Me.SButton1.BorderSize = 0
+        Me.SButton1.FlatAppearance.BorderSize = 0
+        Me.SButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SButton1.Font = New System.Drawing.Font("Segoe UI", 18.25!, System.Drawing.FontStyle.Bold)
+        Me.SButton1.ForeColor = System.Drawing.Color.Black
+        Me.SButton1.Location = New System.Drawing.Point(556, 379)
+        Me.SButton1.Name = "SButton1"
+        Me.SButton1.Size = New System.Drawing.Size(351, 49)
+        Me.SButton1.TabIndex = 4
+        Me.SButton1.Text = "Rebuild kernel config."
+        Me.SButton1.UseVisualStyleBackColor = False
         '
         'PSOD
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 41.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Indigo
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1497, 1037)
+        Me.Controls.Add(Me.SButton1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Segoe UI", 18.25!)
         Me.ForeColor = System.Drawing.Color.White
@@ -93,7 +98,7 @@ Partial Class PSOD
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents SButton1 As Sipaa.Framework.SButton
 End Class

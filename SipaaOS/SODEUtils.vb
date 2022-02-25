@@ -27,4 +27,15 @@
 
 
     End Sub
+    Public Shared Function GetCenter(frm As Form, ctrl As Control) As Point
+        Return New Point(frm.Width / 2 - ctrl.Width / 2, frm.Height / 2 - ctrl.Height / 2)
+    End Function
+
+    Public Shared Function GetCenterWidth(frm As Form, ctrl As Control) As Point
+        Return New Point(frm.Width / 2 - ctrl.Width / 2, ctrl.Location.Y)
+    End Function
+
+    Public Shared Function GetCenterHeight(frm As Form, ctrl As Control) As Point
+        Return New Point(ctrl.Location.X, frm.Height / 2 - ctrl.Height / 2)
+    End Function
 End Class

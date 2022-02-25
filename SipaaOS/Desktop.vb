@@ -17,7 +17,6 @@ Public Class Desktop
                 SPanel2.Show()
             End If
         Catch ex As Exception
-            PSOD.Label2.Text = ex.Message
             PSOD.Show()
             Me.Close()
         End Try
@@ -34,15 +33,14 @@ Public Class Desktop
         Try
             InitializeComponent()
         Catch ex As Exception
-            PSOD.Label2.Text = ex.Message
             PSOD.Show()
             Me.Close()
         End Try
 
         ' Theme system
         Dim this = Me
-            this.FormBorderStyle = FormBorderStyle.None
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size
+        this.FormBorderStyle = FormBorderStyle.None
+        this.Size = Screen.PrimaryScreen.WorkingArea.Size
         this.Location = New Point(0, 0)
         If guest = True Then
                 Label4.Text = "Guest"
@@ -146,6 +144,7 @@ Public Class Desktop
                 SButton2.ForeColor = Color.FromArgb(255, 0, 0, 0)
                 SButton8.ForeColor = Color.FromArgb(255, 0, 0, 0)
                 SButton9.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton10.ForeColor = Color.FromArgb(255, 0, 0, 0)
             Else
                 ' Apply color for the panels and labels
                 SPanel1.BackColor = Color.FromArgb(147, 0, 0, 0)
@@ -160,6 +159,7 @@ Public Class Desktop
                 SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
                 SButton8.ForeColor = Color.FromArgb(255, 255, 255, 255)
                 SButton9.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton10.ForeColor = Color.FromArgb(255, 255, 255, 255)
             End If
         Else
             If My.Settings.Theme = "Light" Then
@@ -176,6 +176,7 @@ Public Class Desktop
                 SButton3.ForeColor = Color.FromArgb(255, 0, 0, 0)
                 SButton9.ForeColor = Color.FromArgb(255, 0, 0, 0)
                 SButton8.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton10.ForeColor = Color.FromArgb(255, 0, 0, 0)
             Else
                 ' Apply color for the panels and labels
                 SPanel1.BackColor = Color.FromArgb(255, 0, 0, 0)
@@ -190,6 +191,7 @@ Public Class Desktop
                 SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
                 SButton8.ForeColor = Color.FromArgb(255, 255, 255, 255)
                 SButton9.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton10.ForeColor = Color.FromArgb(255, 255, 255, 255)
             End If
         End If
 
@@ -287,5 +289,30 @@ Public Class Desktop
 
     Private Sub SButton9_Click(sender As Object, e As EventArgs) Handles SButton9.Click
         OpenApp(SipaaOS.Paint)
+    End Sub
+
+    Private Sub SButton11_Click(sender As Object, e As EventArgs) Handles SButton11.Click
+        OpenApp(SedgeTabHandler)
+    End Sub
+
+    Private Sub SButton10_Click(sender As Object, e As EventArgs) Handles SButton10.Click
+        OpenApp(SedgeTabHandler)
+    End Sub
+
+    Private Sub TopToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TopToolStripMenuItem.Click
+        SPanel1.Dock = DockStyle.Top
+        SPanel2.Location = New Point(3, 43)
+    End Sub
+
+    Private Sub BottomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BottomToolStripMenuItem.Click
+        SPanel1.Dock = DockStyle.Bottom
+        SPanel2.Location = New Point(3, Me.Width - 43)
+    End Sub
+
+    Private Sub FullScreenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FullScreenToolStripMenuItem.Click
+        If FullScreenToolStripMenuItem.Checked = True Then
+            SPanel1.Dock = DockStyle.Bottom
+            SPanel2.Location = New Point(3, Me.Width - SPanel2.Width - 43)
+        End If
     End Sub
 End Class

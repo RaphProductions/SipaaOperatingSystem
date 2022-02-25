@@ -86,10 +86,10 @@ Public Class Paint
     End Sub
 
     Private Sub SButton2_Click(sender As Object, e As EventArgs) Handles SButton2.Click
-        Dim dialog As New ColorDialog
+        Dim dialog As New ColorPick
         If dialog.ShowDialog() = DialogResult.OK Then
-            p.Color = dialog.Color
-            SPanel3.BackColor = dialog.Color
+            p.Color = dialog.selectedColor
+            SPanel3.BackColor = dialog.selectedColor
         End If
     End Sub
 

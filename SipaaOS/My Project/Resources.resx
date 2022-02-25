@@ -118,73 +118,136 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-microsoft-paint-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-microsoft-paint-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sipaabg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Pictures\sipaabg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-settings-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-settings-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-notepad-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-notepad-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-ok-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-ok-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-microsoft-paint-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-microsoft-paint-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-info-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-info-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-shutdown-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Windows10ProgressRing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\Windows10ProgressRing.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-logout-rounded-down-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-logout-rounded-down-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-cancel-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-cancel-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="explorer32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\Explorer (1)\explorer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\explorer32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-restart-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-restart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_cancel_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-cancel-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-error-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\icons8-error-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_desktop_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-desktop-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_save_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_save_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_error_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-error-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_info_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-info-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_logout_rounded_down_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-logout-rounded-down-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_logout_rounded_down_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-logout-rounded-down-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_microsoft_edge_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-microsoft-edge-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_microsoft_paint_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-microsoft-paint-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_microsoft_paint_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-microsoft-paint-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_notepad_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-notepad-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_notepad_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-notepad-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_ok_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-ok-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_recycle_bin_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-recycle-bin-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_recycle_bin_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-recycle-bin-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_registry_editor_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-registry-editor-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_registry_editor_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-registry-editor-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_restart_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-restart-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_restart_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-restart-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_settings_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-settings-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_shutdown_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-shutdown-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_shutdown_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-shutdown-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_windows_10_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-windows-10-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_windows_11_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-windows-11-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_fluent_arrow_circle_left_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_circle_left_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_save_24_filled1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_save_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_fluent_arrow_circle_right_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_circle_right_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_color_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_color_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_fluent_arrow_clockwise_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_clockwise_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_text_font_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_text_font_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_fluent_arrow_forward_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_forward_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_arrow_redo_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_redo_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_arrow_undo_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_arrow_undo_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_fluent_clipboard_paste_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_clipboard_paste_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_copy_24_filled (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="ic_fluent_color_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_color_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_copy_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_copy_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_copy_24_filled__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_copy_24_filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_home_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_home_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_open_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_open_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_open_24_filled__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_open_24_filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_fluent_print_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_print_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_fluent_open_24_filled (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_open_24_filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_fluent_print_24_filled__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_print_24_filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_save_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_save_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_save_24_filled__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_save_24_filled (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_fluent_text_font_24_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Downloads\ic_fluent_text_font_24_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sipaabg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\Users\pc2\Pictures\sipaabg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

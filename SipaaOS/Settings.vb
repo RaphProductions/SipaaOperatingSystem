@@ -138,4 +138,8 @@ Public Class Settings
         TextBox2.Clear()
         MessageBox.Show("Your password has been applied sucessfully!", "SipaaOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

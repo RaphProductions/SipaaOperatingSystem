@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.98.1.19\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.98.1.19\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.98.1.19\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.98.1.19\build\cef.redist.x64.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -14,6 +17,8 @@
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +53,31 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CefSharp, Version=98.1.190.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.98.1.190\lib\net452\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=98.1.190.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.98.1.190\lib\net452\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=98.1.190.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.98.1.190\lib\net452\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyotek.Windows.Forms.ColorPicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cyotek.Windows.Forms.ColorPicker.2.0.0-beta.7\lib\net452\Cyotek.Windows.Forms.ColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="GradientColorPicker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=63fbf260c864cbcc, processorArchitecture=MSIL">
+      <HintPath>..\packages\GradientColorPicker.1.0.0\lib\net46\GradientColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="SipaaFramework">
       <HintPath>..\..\VS\SipaaOS\SipaaOS\bin\Debug\SipaaFramework.dll</HintPath>
     </Reference>
@@ -76,6 +106,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorPick.Designer.vb">
+      <DependentUpon>ColorPick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileWriter.vb" />
+    <Compile Include="Main.vb" />
     <Compile Include="MsgBox.Designer.vb">
       <DependentUpon>MsgBox.vb</DependentUpon>
     </Compile>
@@ -92,6 +130,12 @@
       <DependentUpon>Boot.vb</DependentUpon>
     </Compile>
     <Compile Include="Boot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SedgeTabHandler.Designer.vb">
+      <DependentUpon>SedgeTabHandler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SedgeTabHandler.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paint.Designer.vb">
@@ -116,6 +160,12 @@
       <DependentUpon>PSOD.vb</DependentUpon>
     </Compile>
     <Compile Include="PSOD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SedgeWebBrowser.Designer.vb">
+      <DependentUpon>SedgeWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SedgeWebBrowser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.Designer.vb">
@@ -154,8 +204,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="SODEUtils.vb" />
+    <Compile Include="StartForm.Designer.vb">
+      <DependentUpon>StartForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ColorPick.resx">
+      <DependentUpon>ColorPick.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MsgBox.resx">
       <DependentUpon>MsgBox.vb</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Boot.resx">
       <DependentUpon>Boot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SedgeTabHandler.resx">
+      <DependentUpon>SedgeTabHandler.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paint.resx">
       <DependentUpon>Paint.vb</DependentUpon>
@@ -176,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PSOD.resx">
       <DependentUpon>PSOD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SedgeWebBrowser.resx">
+      <DependentUpon>SedgeWebBrowser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
@@ -192,6 +257,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -204,6 +272,51 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <Content Include="Resources\explorer32.png" />
+    <Content Include="Resources\icons8-cancel-48.png" />
+    <Content Include="Resources\icons8-desktop-48.png" />
+    <Content Include="Resources\icons8-error-48.png" />
+    <Content Include="Resources\icons8-info-48.png" />
+    <Content Include="Resources\icons8-logout-rounded-down-32.png" />
+    <Content Include="Resources\icons8-logout-rounded-down-48.png" />
+    <Content Include="Resources\icons8-microsoft-edge-32.png" />
+    <Content Include="Resources\icons8-microsoft-paint-32.png" />
+    <Content Include="Resources\icons8-microsoft-paint-64.png" />
+    <Content Include="Resources\icons8-notepad-32.png" />
+    <Content Include="Resources\icons8-notepad-64.png" />
+    <Content Include="Resources\icons8-ok-48.png" />
+    <Content Include="Resources\icons8-recycle-bin-48.png" />
+    <Content Include="Resources\icons8-recycle-bin-50.png" />
+    <Content Include="Resources\icons8-registry-editor-32.png" />
+    <Content Include="Resources\icons8-registry-editor-48.png" />
+    <Content Include="Resources\icons8-restart-32.png" />
+    <Content Include="Resources\icons8-restart-48.png" />
+    <Content Include="Resources\icons8-settings-32.png" />
+    <Content Include="Resources\icons8-shutdown-32.png" />
+    <Content Include="Resources\icons8-shutdown-48.png" />
+    <Content Include="Resources\icons8-windows-10-512.png" />
+    <Content Include="Resources\icons8-windows-11-48.png" />
+    <Content Include="Resources\windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SipaaOS.API\SipaaOS.API.vbproj">
+      <Project>{8341EF6E-05EA-417A-A89A-5C0B948A80AB}</Project>
+      <Name>SipaaOS.API</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.98.1.19\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.98.1.19\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.98.1.19\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.98.1.19\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.98.1.190\build\CefSharp.Common.targets')" />
 </Project>

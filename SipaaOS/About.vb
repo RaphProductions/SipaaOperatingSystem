@@ -32,7 +32,6 @@ Public Class About
             Label1.ForeColor = Color.Black
             Label2.ForeColor = Color.Black
             Label3.ForeColor = Color.Black
-            Label4.ForeColor = Color.Black
         Else
             SPanel2.BackColor = Color.FromArgb(255, 100, 100, 100)
             SPanel2.ForeColor = Color.FromArgb(255, 255, 255, 255)
@@ -44,7 +43,6 @@ Public Class About
             Label1.ForeColor = Color.White
             Label2.ForeColor = Color.White
             Label3.ForeColor = Color.White
-            Label4.ForeColor = Color.White
         End If
     End Sub
 
