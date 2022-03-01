@@ -24,7 +24,6 @@
         writer.WriteLine("SHOWCURSOR=false")
         writer.SaveFile()
         MsgBox.Show("SipaaOS Recovery", "The SipaaOS Kernel Configuration File is repaired! SipaaOS will reboot automatically.", MsgBoxType.Sucess)
-        StartForm.MainSub(Me, New EventArgs())
         Me.Close()
     End Sub
 End Class

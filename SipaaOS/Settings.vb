@@ -1,4 +1,5 @@
-﻿Imports System.Runtime.InteropServices
+﻿Imports System.IO
+Imports System.Runtime.InteropServices
 
 Public Class Settings
     Public cornerradius As Integer = 11
@@ -24,7 +25,31 @@ Public Class Settings
         End If
     End Sub
     Private Sub SButton1_Click(sender As Object, e As EventArgs) Handles SButton1.Click
+        SaveSettingsToFile(AppDomain.CurrentDomain.BaseDirectory + "Configuration\SODE.cfg", AppDomain.CurrentDomain.BaseDirectory + "Configuration\USER.cfg")
         Close()
+    End Sub
+    Public Sub SaveSettingsToFile(sodecfgpath As String, usercfgpath As String)
+        If File.Exists(sodecfgpath) = True And File.Exists(usercfgpath) = True Then
+            File.Delete(sodecfgpath)
+            File.Delete(usercfgpath)
+        End If
+        Dim writer As New FileWriter(sodecfgpath)
+        writer.WriteLine("SODE Configuration")
+        writer.WriteLine("------------------------")
+        writer.WriteLine("BackgroundFile=" + My.Settings.BackgroundLocation)
+        writer.WriteLine("Theme=" + My.Settings.Theme)
+        writer.WriteLine("Saero=" + My.Settings.EnableSaero)
+        writer.SaveFile()
+        Dim writer2 As New FileWriter(usercfgpath)
+        writer2.WriteLine("SipaaOS User Info File")
+        writer2.WriteLine("---------------------------------------------------")
+        writer2.WriteLine("Username=" + My.Settings.Username)
+        If My.Settings.Password = "" Then
+            writer2.WriteLine("Password=Nothing")
+        Else
+            writer2.WriteLine("Password=" + My.Settings.Password)
+        End If
+        writer2.SaveFile()
     End Sub
     Public Sub New()
 

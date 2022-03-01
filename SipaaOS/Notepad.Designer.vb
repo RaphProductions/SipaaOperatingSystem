@@ -119,7 +119,6 @@ Partial Class Notepad
         '
         'SaveToolStripMenuItem
         '
-        Me.SaveToolStripMenuItem.Image = Global.SipaaOS.My.Resources.Resources.ic_fluent_save_24_filled1
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.SaveToolStripMenuItem.Text = "Save"

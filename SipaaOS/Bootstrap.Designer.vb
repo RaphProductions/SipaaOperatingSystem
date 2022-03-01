@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class StartForm
+Partial Class Bootstrap
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -24,13 +24,16 @@ Partial Class StartForm
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'StartForm
+        'Bootstrap
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(241, 10)
-        Me.Name = "StartForm"
-        Me.Text = "StartForm"
+        Me.BackColor = System.Drawing.Color.Lime
+        Me.ClientSize = New System.Drawing.Size(10, 10)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "Bootstrap"
+        Me.Text = "Bootstarp"
+        Me.TransparencyKey = System.Drawing.Color.Lime
         Me.ResumeLayout(False)
 
     End Sub
