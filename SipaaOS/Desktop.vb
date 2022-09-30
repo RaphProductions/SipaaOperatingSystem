@@ -43,79 +43,67 @@ Public Class Desktop
         this.Size = Screen.PrimaryScreen.WorkingArea.Size
         this.Location = New Point(0, 0)
         If guest = True Then
-                Label4.Text = "Guest"
+            Label4.Text = "Guest"
+        Else
+            Label4.Text = My.Settings.Username
+        End If
+        If My.Settings.EnableSaero = True Then
+            If My.Settings.Theme = "Light" Then
+                ' Apply color for the panels and labels
+                SPanel1.BackColor = Color.FromArgb(147, 255, 255, 255)
+                SPanel1.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SPanel2.BackColor = Color.FromArgb(147, 255, 255, 255)
+                SPanel2.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                Label2.ForeColor = Color.Black
+                Label3.ForeColor = Color.Black
+                ' Apply color for the buttons
+                SButton1.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton2.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton3.ForeColor = Color.FromArgb(255, 0, 0, 0)
             Else
-                Label4.Text = My.Settings.Username
+                ' Apply color for the panels and labels
+                SPanel1.BackColor = Color.FromArgb(147, 0, 0, 0)
+                SPanel1.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SPanel2.BackColor = Color.FromArgb(147, 0, 0, 0)
+                SPanel2.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                Label2.ForeColor = Color.White
+                Label3.ForeColor = Color.White
+                ' Apply color for the buttons
+                SButton1.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton2.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
             End If
-            If File.Exists(My.Settings.BackgroundLocation) = False Then
-                Me.BackgroundImage = My.Resources.sipaabg
+        Else
+            If My.Settings.Theme = "Light" Then
+                ' Apply color for the panels and labels
+                SPanel1.BackColor = Color.FromArgb(255, 255, 255, 255)
+                SPanel1.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SPanel2.BackColor = Color.FromArgb(255, 255, 255, 255)
+                SPanel2.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                Label2.ForeColor = Color.Black
+                Label3.ForeColor = Color.Black
+                ' Apply color for the buttons
+                SButton1.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton2.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                SButton3.ForeColor = Color.FromArgb(255, 0, 0, 0)
             Else
-                Me.BackgroundImage = Image.FromFile(My.Settings.BackgroundLocation)
+                ' Apply color for the panels and labels
+                SPanel1.BackColor = Color.FromArgb(255, 0, 0, 0)
+                SPanel1.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SPanel2.BackColor = Color.FromArgb(255, 0, 0, 0)
+                SPanel2.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                Label2.ForeColor = Color.White
+                Label3.ForeColor = Color.White
+                ' Apply color for the buttons
+                SButton1.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton2.ForeColor = Color.FromArgb(255, 255, 255, 255)
+                SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
             End If
-            If My.Settings.EnableSaero = True Then
-                If My.Settings.Theme = "Light" Then
-                    ' Apply color for the panels and labels
-                    SPanel1.BackColor = Color.FromArgb(147, 255, 255, 255)
-                    SPanel1.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SPanel2.BackColor = Color.FromArgb(147, 255, 255, 255)
-                    SPanel2.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    Label2.ForeColor = Color.Black
-                    Label3.ForeColor = Color.Black
-                    ' Apply color for the buttons
-                    SButton1.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SButton2.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SButton3.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                Else
-                    ' Apply color for the panels and labels
-                    SPanel1.BackColor = Color.FromArgb(147, 0, 0, 0)
-                    SPanel1.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SPanel2.BackColor = Color.FromArgb(147, 0, 0, 0)
-                    SPanel2.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    Label2.ForeColor = Color.White
-                    Label3.ForeColor = Color.White
-                    ' Apply color for the buttons
-                    SButton1.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SButton2.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                End If
-            Else
-                If My.Settings.Theme = "Light" Then
-                    ' Apply color for the panels and labels
-                    SPanel1.BackColor = Color.FromArgb(255, 255, 255, 255)
-                    SPanel1.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SPanel2.BackColor = Color.FromArgb(255, 255, 255, 255)
-                    SPanel2.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    Label2.ForeColor = Color.Black
-                    Label3.ForeColor = Color.Black
-                    ' Apply color for the buttons
-                    SButton1.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SButton2.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                    SButton3.ForeColor = Color.FromArgb(255, 0, 0, 0)
-                Else
-                    ' Apply color for the panels and labels
-                    SPanel1.BackColor = Color.FromArgb(255, 0, 0, 0)
-                    SPanel1.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SPanel2.BackColor = Color.FromArgb(255, 0, 0, 0)
-                    SPanel2.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    Label2.ForeColor = Color.White
-                    Label3.ForeColor = Color.White
-                    ' Apply color for the buttons
-                    SButton1.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SButton2.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                    SButton3.ForeColor = Color.FromArgb(255, 255, 255, 255)
-                End If
-            End If
-            Label2.Text = DateTime.Now.ToString("HH:mm")
-            Label3.Text = DateTime.Now.ToString("dd/MM/yyyy")
-            If logged = False Then
-                HideSODE()
-                Login.TopLevel = False
-                Login.TopMost = False
-                Me.Controls.Add(Login)
-                Login.Location = New Point(Me.Width / 2 - Login.Width / 2, Me.Height / 2 - Login.Height / 2)
-                Login.Show()
-            End If
-            SystemTimer.Start()
+        End If
+        Label2.Text = DateTime.Now.ToString("HH:mm")
+        Label3.Text = DateTime.Now.ToString("dd/MM/yyyy")
+
+        SystemTimer.Start()
     End Sub
 
     Private Sub SystemTimer_Tick(sender As Object, e As EventArgs) Handles SystemTimer.Tick
@@ -272,7 +260,7 @@ Public Class Desktop
     End Sub
 
     Private Sub SButton7_Click(sender As Object, e As EventArgs) Handles SButton7.Click
-        Boot.Show()
+        Process.Start(AppDomain.CurrentDomain.BaseDirectory + "stoskrnl.exe")
         Me.Close()
     End Sub
 
@@ -280,7 +268,8 @@ Public Class Desktop
         HideSODE()
         logged = False
         guest = False
-        OpenApp(Login)
+        Process.Start(AppDomain.CurrentDomain.BaseDirectory + "silogonui.exe")
+        Me.Close()
     End Sub
 
     Private Sub SButton8_Click(sender As Object, e As EventArgs) Handles SButton8.Click
